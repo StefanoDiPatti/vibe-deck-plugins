@@ -1,0 +1,21 @@
+{
+  "name": "Ultimi terremoti",
+  "description": "Terremoti di magnitudo 2.5+ nelle ultime 24 ore, dal più recente",
+  "icon": "target",
+  "shape": "list",
+  "source": { "type": "http", "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson" },
+  "every": 300,
+  "show": {
+    "label": "TERREMOTI",
+    "items": "{{features}}",
+    "max": 20,
+    "item": {
+      "title": "{{item.properties.place}}",
+      "sub": "{{item.properties.time|ago}}",
+      "right": "M {{item.properties.mag|round:1}}"
+    },
+    "empty": "Nessun terremoto"
+  },
+  "tap": { "type": "open_url", "url": "{{item.properties.url}}" },
+  "size": { "w": 3, "h": 2, "minW": 2, "minH": 2 }
+}

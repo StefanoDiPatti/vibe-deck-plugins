@@ -1,0 +1,12 @@
+{
+  "id": "hacker-news",
+  "name": "Hacker News",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Front page of Hacker News: titles, points and comments; tap a story to open it on the PC",
+  "type": "plugin",
+  "platforms": ["windows", "linux"],
+  "engine": ">=2.2.0",
+  "tags": ["news", "developer"],
+  "permissions": { "http": ["hn.algolia.com"] }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "crypto",
+  "name": "Crypto",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Bitcoin and Ethereum prices in euro with the 24 h change (CoinGecko, no key)",
+  "type": "plugin",
+  "platforms": ["windows", "linux"],
+  "engine": ">=2.2.0",
+  "tags": ["finance"],
+  "permissions": { "http": ["api.coingecko.com"] }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "terremoti",
+  "name": "Terremoti",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Latest earthquakes of magnitude 2.5+ in the world (USGS), newest first; tap one to open its details",
+  "type": "plugin",
+  "platforms": ["windows", "linux"],
+  "engine": ">=2.2.0",
+  "tags": ["news", "science"],
+  "permissions": { "http": ["earthquake.usgs.gov"] }
+}

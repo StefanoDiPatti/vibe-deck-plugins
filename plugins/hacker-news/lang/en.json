@@ -1,0 +1,6 @@
+{
+  "$rules": [
+    ["^(\\d+) punti$", "$1 points"],
+    ["^(\\d+) commenti$", "$1 comments"]
+  ]
+}

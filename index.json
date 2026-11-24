@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "plugins": [
+    {
+      "id": "crypto",
+      "name": "Crypto",
+      "description": "Bitcoin and Ethereum prices in euro with the 24 h change (CoinGecko, no key)",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "finance"
+      ],
+      "permissions": {
+        "http": [
+          "api.coingecko.com"
+        ]
+      },
+      "icon": "bolt",
+      "widgets": 2,
+      "pages": 0,
+      "url": "packages/crypto-1.0.0.vdp.json",
+      "sha256": "37f75e65aceebe7d5a9ed4212682da9de84552ccdce65edfea57ef5d91da20e7",
+      "size": 1431
+    },
+    {
+      "id": "hacker-news",
+      "name": "Hacker News",
+      "description": "Front page of Hacker News: titles, points and comments; tap a story to open it on the PC",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "news",
+        "developer"
+      ],
+      "permissions": {
+        "http": [
+          "hn.algolia.com"
+        ]
+      },
+      "icon": "link",
+      "widgets": 1,
+      "pages": 0,
+      "url": "packages/hacker-news-1.0.0.vdp.json",
+      "sha256": "65853bfdf650704e80f7a336db287451225e27ab8e533ab67141a5ff5bf1e597",
+      "size": 1066
+    },
+    {
+      "id": "terremoti",
+      "name": "Terremoti",
+      "description": "Latest earthquakes of magnitude 2.5+ in the world (USGS), newest first; tap one to open its details",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "news",
+        "science"
+      ],
+      "permissions": {
+        "http": [
+          "earthquake.usgs.gov"
+        ]
+      },
+      "icon": "target",
+      "widgets": 1,
+      "pages": 0,
+      "url": "packages/terremoti-1.0.0.vdp.json",
+      "sha256": "3ea35eb7572a720aeafb398bf4c4d88439a3d4c98c1bcc0f881f2a580503b878",
+      "size": 1045
+    }
+  ]
+}

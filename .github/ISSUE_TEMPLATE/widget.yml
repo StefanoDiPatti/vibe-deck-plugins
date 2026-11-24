@@ -1,0 +1,41 @@
+name: Propose a widget
+description: Send a widget made with the Vibe Deck editor to the market
+title: "Widget: "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! The widget is checked with the same validator as the deck and approved by hand.
+        Only JSON: no commands, no apps, internet addresses without API keys.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: How the widget is called in the catalog
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What it does
+      description: One or two lines, and where the data comes from
+    validations:
+      required: true
+  - type: textarea
+    id: widget
+    attributes:
+      label: Widget JSON
+      description: Filled in by the "Proponi al market" button of the control panel
+      render: json
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: It uses only public data, without API keys, passwords or personal data
+          required: true
+        - label: I made it, and it can be published under the MIT license
+          required: true
