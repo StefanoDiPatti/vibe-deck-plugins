@@ -1,0 +1,16 @@
+{
+  "id": "pack-scienza",
+  "name": "Science and news pack",
+  "description": "Space news and launches, earthquakes and some curiosities every day",
+  "author": "StefanoDiPatti",
+  "icon": "globe",
+  "tags": [
+    "science",
+    "news"
+  ],
+  "includes": [
+    "spazio-scienza",
+    "terremoti",
+    "curiosita"
+  ]
+}

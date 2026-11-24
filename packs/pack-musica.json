@@ -1,0 +1,14 @@
+{
+  "id": "pack-musica",
+  "name": "Music pack",
+  "description": "Charts of songs, albums and radios, plus buttons and voice commands for the music on the PC",
+  "author": "StefanoDiPatti",
+  "icon": "music",
+  "tags": [
+    "music"
+  ],
+  "includes": [
+    "classifiche-musica",
+    "comandi-musica"
+  ]
+}

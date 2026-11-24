@@ -7,6 +7,7 @@ const ROOT = path.join(__dirname, '..');
 const SRC = path.join(ROOT, 'plugins');
 const OUT = path.join(ROOT, 'packages');
 const INDEX = path.join(ROOT, 'index.json');
+const PACKS = path.join(ROOT, 'packs');
 const NAME_RE = /^[a-z0-9][a-z0-9_-]*$/;
 const VERSION_RE = /^\d+\.\d+\.\d+$/;
 const ALLOWED = /^(plugin\.json|home\.json|(widgets|pages|lang)\/[a-z0-9][a-z0-9_.-]*\.json)$/;
@@ -70,6 +71,31 @@ function firstIcon(files) {
   return (w && w.icon) || 'apps';
 }
 
+function readPacks(entries, problems) {
+  if (!fs.existsSync(PACKS)) return [];
+  const ids = entries.map(function (e) { return e.id; });
+  const seen = {};
+  return fs.readdirSync(PACKS).filter(function (f) { return /\.json$/.test(f); }).sort().map(function (f) {
+    const where = 'packs/' + f;
+    let p;
+    try { p = JSON.parse(fs.readFileSync(path.join(PACKS, f), 'utf8')); } catch (e) { problems.add(where, 'JSON non valido: ' + e.message); return null; }
+    const id = f.replace(/\.json$/, '');
+    if (!p || p.id !== id) problems.add(where, '"id" deve essere "' + id + '", come il nome del file');
+    if (!NAME_RE.test(id)) problems.add(where, 'nome non valido: minuscole, numeri, - e _');
+    if (ids.indexOf(id) >= 0) problems.add(where, 'esiste già un plugin "' + id + '": un pack deve avere un nome diverso');
+    ['name', 'description', 'author'].forEach(function (k) { if (!p || typeof p[k] !== 'string' || !p[k].trim()) problems.add(where, '"' + k + '" mancante'); });
+    const inc = p && Array.isArray(p.includes) ? p.includes : [];
+    if (inc.length < 2) problems.add(where, 'un pack deve includere almeno 2 plugin');
+    inc.forEach(function (n) {
+      if (ids.indexOf(n) < 0) problems.add(where, 'plugin "' + n + '" non trovato in plugins/');
+      if (seen[n]) problems.add(where, '"' + n + '" è già nel pack ' + seen[n]);
+      seen[n] = id;
+    });
+    if (!p) return null;
+    return { id: id, name: p.name, description: p.description, author: p.author, icon: p.icon || 'apps', tags: Array.isArray(p.tags) ? p.tags : [], includes: inc };
+  }).filter(Boolean);
+}
+
 function build(dockDir) {
   const problems = new Problems();
   const validator = new DockValidator(dockDir);
@@ -100,8 +126,9 @@ function build(dockDir) {
       url: 'packages/' + file, sha256: crypto.createHash('sha256').update(text).digest('hex'), size: text.length
     });
   });
-  const index = JSON.stringify({ format: 1, plugins: entries }, null, 2) + '\n';
-  return { problems: problems, packages: packages, index: index, entries: entries };
+  const packs = readPacks(entries, problems);
+  const index = JSON.stringify(packs.length ? { format: 1, plugins: entries, packs: packs } : { format: 1, plugins: entries }, null, 2) + '\n';
+  return { problems: problems, packages: packages, index: index, entries: entries, packs: packs };
 }
 
 function main() {
@@ -123,7 +150,7 @@ function main() {
       console.error('Da rigenerare con "node scripts/build.js":\n  ' + stale.join('\n  '));
       process.exit(1);
     }
-    console.log('Market a posto: ' + r.entries.length + ' plugin');
+    console.log('Market a posto: ' + r.entries.length + ' plugin, ' + r.packs.length + ' pack');
     return;
   }
   fs.mkdirSync(OUT, { recursive: true });
@@ -131,6 +158,7 @@ function main() {
   Object.keys(r.packages).forEach(function (f) { fs.writeFileSync(path.join(OUT, f), r.packages[f]); });
   fs.writeFileSync(INDEX, r.index);
   r.entries.forEach(function (e) { console.log('ok  ' + e.id + ' ' + e.version + '  (' + e.widgets + ' widget, ' + e.size + ' byte)'); });
+  r.packs.forEach(function (p) { console.log('ok  pack ' + p.id + '  (' + p.includes.join(', ') + ')'); });
 }
 
 main();

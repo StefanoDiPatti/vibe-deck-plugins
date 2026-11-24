@@ -1,0 +1,14 @@
+{
+  "id": "pack-finanza",
+  "name": "Finance pack",
+  "description": "Exchange rates, crypto market and Bitcoin and Ethereum prices",
+  "author": "StefanoDiPatti",
+  "icon": "bolt",
+  "tags": [
+    "finance"
+  ],
+  "includes": [
+    "finanza",
+    "crypto"
+  ]
+}

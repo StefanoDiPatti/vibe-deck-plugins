@@ -1,5 +1,5 @@
 name: Propose a widget
-description: Send a widget made with the Vibe Deck editor to the market
+description: Send a widget made with the Vibe Deck widget editor (on the site) to the market
 title: "Widget: "
 labels: ["proposal"]
 body:
@@ -15,6 +15,13 @@ body:
       description: How the widget is called in the catalog
     validations:
       required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Your name or nickname, shown as the author of the widget in the market
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
@@ -26,7 +33,7 @@ body:
     id: widget
     attributes:
       label: Widget JSON
-      description: Filled in by the "Proponi al market" button of the control panel
+      description: Filled in by "Propose on GitHub" in the widget editor (https://stefanodipatti.github.io/vibe-deck/create.html)
       render: json
     validations:
       required: true
