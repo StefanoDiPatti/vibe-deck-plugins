@@ -1,0 +1,17 @@
+{
+  "id": "pack-ogni-giorno",
+  "name": "Everyday pack",
+  "description": "Weather, quick links, shortcuts, voice commands and the state of the PC",
+  "author": "StefanoDiPatti",
+  "icon": "sun",
+  "tags": [
+    "productivity"
+  ],
+  "includes": [
+    "meteo-extra",
+    "link-rapidi",
+    "scorciatoie",
+    "voce",
+    "sistema"
+  ]
+}

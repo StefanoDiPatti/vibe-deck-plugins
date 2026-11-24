@@ -1,0 +1,14 @@
+{
+  "id": "pack-gaming",
+  "name": "Gamer pack",
+  "description": "Players online in the most played Steam games and the best game deals and free games",
+  "author": "StefanoDiPatti",
+  "icon": "gamepad",
+  "tags": [
+    "gaming"
+  ],
+  "includes": [
+    "steam-giocatori",
+    "offerte-giochi"
+  ]
+}

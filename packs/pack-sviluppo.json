@@ -1,0 +1,16 @@
+{
+  "id": "pack-sviluppo",
+  "name": "Developer news pack",
+  "description": "Status of the services you use, developer news, Hacker News and the latest versions of your tools",
+  "author": "StefanoDiPatti",
+  "icon": "code",
+  "tags": [
+    "developer",
+    "news"
+  ],
+  "includes": [
+    "stato-servizi",
+    "sviluppo",
+    "hacker-news"
+  ]
+}

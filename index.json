@@ -493,5 +493,98 @@
       "sha256": "9a6517e800ef03f517be6ca673afa3df80f4c0e04d0b16741e3850b9a50963ce",
       "size": 4704
     }
+  ],
+  "packs": [
+    {
+      "id": "pack-finanza",
+      "name": "Finance pack",
+      "description": "Exchange rates, crypto market and Bitcoin and Ethereum prices",
+      "author": "StefanoDiPatti",
+      "icon": "bolt",
+      "tags": [
+        "finance"
+      ],
+      "includes": [
+        "finanza",
+        "crypto"
+      ]
+    },
+    {
+      "id": "pack-gaming",
+      "name": "Gamer pack",
+      "description": "Players online in the most played Steam games and the best game deals and free games",
+      "author": "StefanoDiPatti",
+      "icon": "gamepad",
+      "tags": [
+        "gaming"
+      ],
+      "includes": [
+        "steam-giocatori",
+        "offerte-giochi"
+      ]
+    },
+    {
+      "id": "pack-musica",
+      "name": "Music pack",
+      "description": "Charts of songs, albums and radios, plus buttons and voice commands for the music on the PC",
+      "author": "StefanoDiPatti",
+      "icon": "music",
+      "tags": [
+        "music"
+      ],
+      "includes": [
+        "classifiche-musica",
+        "comandi-musica"
+      ]
+    },
+    {
+      "id": "pack-ogni-giorno",
+      "name": "Everyday pack",
+      "description": "Weather, quick links, shortcuts, voice commands and the state of the PC",
+      "author": "StefanoDiPatti",
+      "icon": "sun",
+      "tags": [
+        "productivity"
+      ],
+      "includes": [
+        "meteo-extra",
+        "link-rapidi",
+        "scorciatoie",
+        "voce",
+        "sistema"
+      ]
+    },
+    {
+      "id": "pack-scienza",
+      "name": "Science and news pack",
+      "description": "Space news and launches, earthquakes and some curiosities every day",
+      "author": "StefanoDiPatti",
+      "icon": "globe",
+      "tags": [
+        "science",
+        "news"
+      ],
+      "includes": [
+        "spazio-scienza",
+        "terremoti",
+        "curiosita"
+      ]
+    },
+    {
+      "id": "pack-sviluppo",
+      "name": "Developer news pack",
+      "description": "Status of the services you use, developer news, Hacker News and the latest versions of your tools",
+      "author": "StefanoDiPatti",
+      "icon": "code",
+      "tags": [
+        "developer",
+        "news"
+      ],
+      "includes": [
+        "stato-servizi",
+        "sviluppo",
+        "hacker-news"
+      ]
+    }
   ]
 }

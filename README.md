@@ -1,7 +1,8 @@
 # Vibe Deck plugins
 
-The **market** of [Vibe Deck](https://github.com/StefanoDiPatti/vibe-deck): widgets and pages anyone can install from the
-control panel of the deck with one tap. Browse it on the site: **https://stefanodipatti.github.io/vibe-deck/#market**
+The **market** of [Vibe Deck](https://github.com/StefanoDiPatti/vibe-deck): ready-made packs, widgets and pages anyone can
+install on the deck. Browse it on the site: **https://stefanodipatti.github.io/vibe-deck/market.html** (search, categories,
+packs first); **Install** opens the control panel of your deck to confirm.
 
 ## What can go in the market
 
@@ -15,10 +16,10 @@ stay plugins with code, installed by hand.
 
 ## Propose a widget
 
-1. Make it in the control panel of your deck: card **Crea un widget**.
-2. In **I tuoi widget** press **Proponi al market**: the site opens with your widget ready, and you choose whether to send
-   it or keep it for yourself.
-3. Or open an issue with the **Propose a widget** form, or a pull request with a folder in `plugins/<id>/`.
+1. Make it in the **[widget editor](https://stefanodipatti.github.io/vibe-deck/create.html)** on the site.
+2. At the end write your name or nickname (it becomes the **author** shown in the market) and press **Propose on GitHub**:
+   the **Propose a widget** form opens already filled in. Or keep it just for you with **Add to my deck**.
+3. Or open a pull request with a folder in `plugins/<id>/`.
 
 Every proposal is checked (same validator as the deck) and approved by hand before it goes in.
 
@@ -28,6 +29,7 @@ Every proposal is checked (same validator as the deck) and approved by hand befo
 plugins/<id>/plugin.json          id, name, version, author, description, engine, permissions
 plugins/<id>/widgets/*.json       JSON widgets (see "JSON widgets" in the Vibe Deck README)
 plugins/<id>/lang/en.json         English texts and "$rules"
+packs/<id>.json                   a pack: { id, name, description, author, icon, tags, includes: [plugin ids] }
 packages/<id>-<version>.vdp.json  generated: the package the deck downloads
 index.json                        generated: the list the deck and the site read
 ```
@@ -44,6 +46,20 @@ node scripts/verify.js --dock ../vibe-deck/app --only finanza
 `verify.js` asks the deck for a preview of every widget with today's data and reports empty values, empty lists,
 unresolved placeholders and sites that don't answer (public APIs have rate limits: check one plugin with `--only`).
 Widgets with the PC data (`pc` source) are checked on the deck itself.
+
+## Packs
+
+Ready-made groups of plugins, shown first on the site; **Install pack** installs the ones still missing. A pack has a name
+different from every plugin, includes at least 2 plugins, and every plugin is in at most one pack.
+
+| Pack | Plugins |
+|---|---|
+| Music pack | Music charts, Music controls |
+| Gamer pack | Steam players, Game deals |
+| Developer news pack | Service status, Developer news, Hacker News |
+| Finance pack | Finance, Crypto |
+| Science and news pack | Space and science, Earthquakes, Curiosities |
+| Everyday pack | Weather extra, Quick links, Shortcuts, Voice, System |
 
 ## Catalog
 
