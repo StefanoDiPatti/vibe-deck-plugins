@@ -1,0 +1,16 @@
+{
+  "id": "scorciatoie",
+  "name": "Shortcuts",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Ready-made shortcut buttons: windows and virtual desktops, browser tabs, text editing, VS Code, YouTube, Teams, Zoom, Meet, File Explorer, screenshots, emoji and clipboard",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "productivity"
+  ]
+}

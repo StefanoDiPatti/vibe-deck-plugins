@@ -1,0 +1,21 @@
+{
+  "name": "Battuta da papà",
+  "description": "Una \"dad joke\", cambia ogni ora (icanhazdadjoke)",
+  "icon": "sparkle",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://icanhazdadjoke.com/"
+  },
+  "every": 3600,
+  "show": {
+    "label": "DAD JOKE",
+    "text": "{{joke}}"
+  },
+  "size": {
+    "w": 4,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

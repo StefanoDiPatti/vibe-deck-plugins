@@ -1,0 +1,25 @@
+{
+  "id": "curiosita",
+  "name": "Curiosities",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Quote of the day, programmer jokes, dad jokes, useless facts and random advice (in English)",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "fun"
+  ],
+  "permissions": {
+    "http": [
+      "zenquotes.io",
+      "v2.jokeapi.dev",
+      "icanhazdadjoke.com",
+      "uselessfacts.jsph.pl",
+      "api.adviceslip.com"
+    ]
+  }
+}

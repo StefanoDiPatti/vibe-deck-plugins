@@ -1,0 +1,22 @@
+{
+  "name": "Onde del mare",
+  "description": "Altezza e periodo delle onde a Ostia (Open-Meteo Marine)",
+  "icon": "drop",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://marine-api.open-meteo.com/v1/marine?latitude=41.73&longitude=12.28&current=wave_height,wave_period&timezone=auto"
+  },
+  "every": 1800,
+  "show": {
+    "label": "ONDE",
+    "icon": "drop",
+    "value": "{{current.wave_height|round:1}}",
+    "unit": "m",
+    "sub": "periodo {{current.wave_period|round:1}} s"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Marvel Rivals: giocatori online",
+  "description": "Quante persone stanno giocando adesso a Marvel Rivals su Steam",
+  "icon": "gamepad",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=2767030"
+  },
+  "every": 300,
+  "show": {
+    "label": "MARVEL RIVALS",
+    "icon": "gamepad",
+    "value": "{{response.player_count|thousands}}",
+    "sub": "giocatori online su Steam"
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://store.steampowered.com/app/2767030/"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

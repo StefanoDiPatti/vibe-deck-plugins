@@ -1,0 +1,24 @@
+{
+  "name": "Indice UV",
+  "description": "L'indice UV massimo di oggi: da 6 serve protezione (Open-Meteo)",
+  "icon": "sun",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=41.89&longitude=12.49&daily=uv_index_max&forecast_days=1&timezone=auto"
+  },
+  "every": 3600,
+  "show": {
+    "label": "INDICE UV",
+    "icon": "sun",
+    "value": "{{daily.uv_index_max.0|round:1}}",
+    "sub": "massimo di oggi",
+    "level": "{{daily.uv_index_max.0}}",
+    "warn": 6,
+    "hot": 8
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

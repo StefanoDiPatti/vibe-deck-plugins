@@ -1,0 +1,27 @@
+{
+  "id": "sviluppo",
+  "name": "Developer news",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Lobsters, dev.to, Show and Ask HN, npm downloads, the latest releases of Node.js, VS Code, Deno, Bun, Godot and Rust, current Python and Node.js",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "developer",
+    "news"
+  ],
+  "permissions": {
+    "http": [
+      "lobste.rs",
+      "dev.to",
+      "hn.algolia.com",
+      "api.npmjs.org",
+      "endoflife.date",
+      "api.github.com"
+    ]
+  }
+}

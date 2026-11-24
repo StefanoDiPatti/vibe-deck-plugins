@@ -1,0 +1,24 @@
+{
+  "name": "Temperatura CPU",
+  "description": "La temperatura del processore (se il PC la fornisce)",
+  "icon": "thermo",
+  "shape": "value",
+  "source": {
+    "type": "pc"
+  },
+  "every": 3,
+  "show": {
+    "label": "CPU",
+    "icon": "thermo",
+    "value": "{{cpu.temp|default:N/D}}",
+    "unit": "°C",
+    "sub": "uso {{cpu.usage}}%",
+    "bar": "{{cpu.temp}}",
+    "warn": 70,
+    "hot": 85
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

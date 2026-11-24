@@ -1,0 +1,66 @@
+{
+  "name": "Comandi della musica",
+  "description": "Play/pausa, avanti, indietro, volume e muto",
+  "icon": "music",
+  "shape": "buttons",
+  "show": {
+    "label": "MUSICA"
+  },
+  "buttons": [
+    {
+      "label": "INDIETRO",
+      "icon": "prev",
+      "action": {
+        "type": "media",
+        "command": "previous"
+      }
+    },
+    {
+      "label": "PLAY",
+      "icon": "play",
+      "color": "#1f4f8f",
+      "action": {
+        "type": "media",
+        "command": "play_pause"
+      }
+    },
+    {
+      "label": "AVANTI",
+      "icon": "next",
+      "action": {
+        "type": "media",
+        "command": "next"
+      }
+    },
+    {
+      "label": "VOL -",
+      "icon": "voldown",
+      "action": {
+        "type": "media",
+        "command": "volume_down"
+      }
+    },
+    {
+      "label": "MUTO",
+      "icon": "mute",
+      "action": {
+        "type": "media",
+        "command": "mute"
+      }
+    },
+    {
+      "label": "VOL +",
+      "icon": "volup",
+      "action": {
+        "type": "media",
+        "command": "volume_up"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

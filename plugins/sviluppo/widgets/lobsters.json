@@ -1,0 +1,30 @@
+{
+  "name": "Lobsters",
+  "description": "Le storie più votate su Lobsters, tocco = apri",
+  "icon": "link",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://lobste.rs/hottest.json"
+  },
+  "every": 900,
+  "show": {
+    "label": "LOBSTERS",
+    "items": "{{.}}",
+    "max": 15,
+    "item": {
+      "title": "{{item.title}}",
+      "sub": "{{item.score}} punti · {{item.comment_count}} commenti · {{item.tags|join:, }}"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "{{item.short_id_url}}"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

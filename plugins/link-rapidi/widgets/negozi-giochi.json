@@ -1,0 +1,65 @@
+{
+  "name": "Negozi di giochi",
+  "description": "Steam, Epic Games, GOG, Xbox, PlayStation, itch.io",
+  "icon": "gamepad",
+  "shape": "buttons",
+  "show": {
+    "label": "NEGOZI DI GIOCHI"
+  },
+  "buttons": [
+    {
+      "label": "STEAM",
+      "icon": "gamepad",
+      "action": {
+        "type": "open_url",
+        "url": "steam://open/main"
+      }
+    },
+    {
+      "label": "EPIC",
+      "icon": "gamepad",
+      "action": {
+        "type": "open_url",
+        "url": "https://store.epicgames.com/"
+      }
+    },
+    {
+      "label": "GOG",
+      "icon": "gamepad",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.gog.com/"
+      }
+    },
+    {
+      "label": "XBOX",
+      "icon": "gamepad",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.xbox.com/"
+      }
+    },
+    {
+      "label": "PLAYSTATION",
+      "icon": "gamepad",
+      "action": {
+        "type": "open_url",
+        "url": "https://store.playstation.com/"
+      }
+    },
+    {
+      "label": "ITCH.IO",
+      "icon": "gamepad",
+      "action": {
+        "type": "open_url",
+        "url": "https://itch.io/"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

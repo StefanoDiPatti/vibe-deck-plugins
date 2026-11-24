@@ -1,0 +1,31 @@
+{
+  "name": "Radio più ascoltate",
+  "description": "Le stazioni radio più ascoltate nel mondo (Radio Browser), tocco = apri il sito",
+  "icon": "radio",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://de1.api.radio-browser.info/json/stations/topclick/15"
+  },
+  "every": 3600,
+  "show": {
+    "label": "RADIO",
+    "items": "{{.}}",
+    "max": 15,
+    "item": {
+      "icon": "radio",
+      "title": "{{item.name}}",
+      "sub": "{{item.country}} · {{item.clickcount|thousands}} ascolti"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "{{item.homepage}}"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

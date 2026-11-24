@@ -1,0 +1,17 @@
+{
+  "id": "link-rapidi",
+  "name": "Quick links",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "One-tap buttons that open sites on the PC: AI assistants, Google, social networks, streaming, game stores, developer sites, shopping, Microsoft 365, maps",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "productivity",
+    "links"
+  ]
+}

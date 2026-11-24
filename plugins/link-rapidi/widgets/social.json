@@ -1,0 +1,66 @@
+{
+  "name": "Social",
+  "description": "YouTube, Instagram, Reddit, X, LinkedIn, Twitch",
+  "icon": "person",
+  "shape": "buttons",
+  "show": {
+    "label": "SOCIAL"
+  },
+  "buttons": [
+    {
+      "label": "YOUTUBE",
+      "icon": "film",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.youtube.com/"
+      },
+      "color": "#8b1d1d"
+    },
+    {
+      "label": "INSTAGRAM",
+      "icon": "camera",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.instagram.com/"
+      }
+    },
+    {
+      "label": "REDDIT",
+      "icon": "chat",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.reddit.com/"
+      }
+    },
+    {
+      "label": "X",
+      "icon": "send",
+      "action": {
+        "type": "open_url",
+        "url": "https://x.com/"
+      }
+    },
+    {
+      "label": "LINKEDIN",
+      "icon": "person",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.linkedin.com/"
+      }
+    },
+    {
+      "label": "TWITCH",
+      "icon": "live",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.twitch.tv/"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

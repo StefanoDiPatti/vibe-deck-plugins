@@ -1,0 +1,73 @@
+{
+  "name": "Zoom",
+  "description": "Microfono, videocamera, condividi, chat, esci",
+  "icon": "headset",
+  "shape": "buttons",
+  "show": {
+    "label": "ZOOM"
+  },
+  "buttons": [
+    {
+      "label": "MICROFONO",
+      "icon": "mic",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "A"
+        ]
+      }
+    },
+    {
+      "label": "VIDEO",
+      "icon": "camera",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "V"
+        ]
+      }
+    },
+    {
+      "label": "CONDIVIDI",
+      "icon": "desktop",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "S"
+        ]
+      }
+    },
+    {
+      "label": "CHAT",
+      "icon": "chat",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "H"
+        ]
+      }
+    },
+    {
+      "label": "ESCI",
+      "icon": "hangup",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "Q"
+        ]
+      },
+      "color": "#8b1d1d"
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

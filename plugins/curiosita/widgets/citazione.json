@@ -1,0 +1,22 @@
+{
+  "name": "Citazione del giorno",
+  "description": "Una citazione al giorno (ZenQuotes)",
+  "icon": "sparkle",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://zenquotes.io/api/today"
+  },
+  "every": 21600,
+  "show": {
+    "label": "CITAZIONE",
+    "text": "{{0.q}}",
+    "sub": "— {{0.a}}"
+  },
+  "size": {
+    "w": 4,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

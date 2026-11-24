@@ -1,0 +1,66 @@
+{
+  "name": "YouTube",
+  "description": "Play/pausa, indietro e avanti di 10 s, schermo intero, muto, sottotitoli (con YouTube in primo piano)",
+  "icon": "film",
+  "shape": "buttons",
+  "show": {
+    "label": "YOUTUBE"
+  },
+  "buttons": [
+    {
+      "label": "-10 S",
+      "icon": "prev",
+      "action": {
+        "type": "key",
+        "key": "J"
+      }
+    },
+    {
+      "label": "PLAY",
+      "icon": "play",
+      "action": {
+        "type": "key",
+        "key": "K"
+      },
+      "color": "#8b1d1d"
+    },
+    {
+      "label": "+10 S",
+      "icon": "next",
+      "action": {
+        "type": "key",
+        "key": "L"
+      }
+    },
+    {
+      "label": "SCHERMO",
+      "icon": "fullscreen",
+      "action": {
+        "type": "key",
+        "key": "F"
+      }
+    },
+    {
+      "label": "MUTO",
+      "icon": "mute",
+      "action": {
+        "type": "key",
+        "key": "M"
+      }
+    },
+    {
+      "label": "SOTTOTITOLI",
+      "icon": "chat",
+      "action": {
+        "type": "key",
+        "key": "C"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

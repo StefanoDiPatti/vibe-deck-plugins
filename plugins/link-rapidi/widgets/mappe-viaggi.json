@@ -1,0 +1,65 @@
+{
+  "name": "Mappe e viaggi",
+  "description": "Google Maps, Trenitalia, Italo, Booking, Skyscanner, meteo",
+  "icon": "globe",
+  "shape": "buttons",
+  "show": {
+    "label": "MAPPE E VIAGGI"
+  },
+  "buttons": [
+    {
+      "label": "MAPS",
+      "icon": "globe",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.google.com/maps"
+      }
+    },
+    {
+      "label": "TRENITALIA",
+      "icon": "flag",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.trenitalia.com/"
+      }
+    },
+    {
+      "label": "ITALO",
+      "icon": "flag",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.italotreno.com/"
+      }
+    },
+    {
+      "label": "BOOKING",
+      "icon": "home",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.booking.com/"
+      }
+    },
+    {
+      "label": "SKYSCANNER",
+      "icon": "send",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.skyscanner.it/"
+      }
+    },
+    {
+      "label": "METEO",
+      "icon": "cloud",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.ilmeteo.it/"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

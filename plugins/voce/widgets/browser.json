@@ -1,0 +1,126 @@
+{
+  "name": "Browser a voce",
+  "description": "Di' \"nuova scheda\", \"chiudi scheda\", \"indietro\", \"aggiorna\"; il resto lo cerca su Google",
+  "icon": "mic",
+  "shape": "voice",
+  "show": {
+    "label": "BROWSER A VOCE"
+  },
+  "voice": {
+    "placeholder": "Di' un comando…",
+    "commands": [
+      {
+        "say": [
+          "nuova scheda",
+          "apri una scheda"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "CTRL",
+            "T"
+          ]
+        }
+      },
+      {
+        "say": [
+          "chiudi scheda",
+          "chiudi la scheda"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "CTRL",
+            "W"
+          ]
+        }
+      },
+      {
+        "say": [
+          "riapri",
+          "riapri la scheda"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "CTRL",
+            "SHIFT",
+            "T"
+          ]
+        }
+      },
+      {
+        "say": [
+          "indietro",
+          "torna indietro"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "ALT",
+            "LEFT"
+          ]
+        }
+      },
+      {
+        "say": [
+          "avanti"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "ALT",
+            "RIGHT"
+          ]
+        }
+      },
+      {
+        "say": [
+          "aggiorna",
+          "ricarica"
+        ],
+        "action": {
+          "type": "key",
+          "key": "F5"
+        }
+      },
+      {
+        "say": [
+          "scheda successiva",
+          "prossima scheda"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "CTRL",
+            "TAB"
+          ]
+        }
+      },
+      {
+        "say": [
+          "scheda precedente"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "CTRL",
+            "SHIFT",
+            "TAB"
+          ]
+        }
+      }
+    ],
+    "action": {
+      "type": "open_url",
+      "url": "https://www.google.com/search?q={{text|url}}"
+    },
+    "reply": "Cerco su Google"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

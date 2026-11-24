@@ -1,0 +1,17 @@
+{
+  "id": "voce",
+  "name": "Voice commands",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Voice packs for the tablet microphone: browser, Windows, YouTube, and \"search on YouTube / Wikipedia\" for anything else (Italian phrases)",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "productivity",
+    "voice"
+  ]
+}

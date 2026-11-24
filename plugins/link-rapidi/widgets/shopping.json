@@ -1,0 +1,65 @@
+{
+  "name": "Shopping",
+  "description": "Amazon, eBay, AliExpress, Subito, Vinted, IKEA",
+  "icon": "star",
+  "shape": "buttons",
+  "show": {
+    "label": "SHOPPING"
+  },
+  "buttons": [
+    {
+      "label": "AMAZON",
+      "icon": "cube",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.amazon.it/"
+      }
+    },
+    {
+      "label": "EBAY",
+      "icon": "cube",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.ebay.it/"
+      }
+    },
+    {
+      "label": "ALIEXPRESS",
+      "icon": "cube",
+      "action": {
+        "type": "open_url",
+        "url": "https://it.aliexpress.com/"
+      }
+    },
+    {
+      "label": "SUBITO",
+      "icon": "cube",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.subito.it/"
+      }
+    },
+    {
+      "label": "VINTED",
+      "icon": "cube",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.vinted.it/"
+      }
+    },
+    {
+      "label": "IKEA",
+      "icon": "home",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.ikea.com/it/it/"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

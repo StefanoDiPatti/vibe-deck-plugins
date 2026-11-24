@@ -1,0 +1,24 @@
+{
+  "name": "Temperatura GPU",
+  "description": "La temperatura della scheda video (serve nvidia-smi)",
+  "icon": "thermo",
+  "shape": "value",
+  "source": {
+    "type": "pc"
+  },
+  "every": 3,
+  "show": {
+    "label": "GPU",
+    "icon": "thermo",
+    "value": "{{gpu.temp|default:N/D}}",
+    "unit": "°C",
+    "sub": "uso {{gpu.usage|default:–}}%",
+    "bar": "{{gpu.temp}}",
+    "warn": 70,
+    "hot": 85
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

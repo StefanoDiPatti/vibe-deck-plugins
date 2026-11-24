@@ -8,7 +8,7 @@
   "show": {
     "label": "BITCOIN",
     "icon": "bolt",
-    "value": "{{bitcoin.eur|round}}",
+    "value": "{{bitcoin.eur|round|thousands}}",
     "unit": "€",
     "sub": "24 h: {{bitcoin.eur_24h_change|round:2}}%"
   },

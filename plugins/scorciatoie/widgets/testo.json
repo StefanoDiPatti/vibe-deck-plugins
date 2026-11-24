@@ -1,0 +1,105 @@
+{
+  "name": "Modifica testo",
+  "description": "Copia, incolla, taglia, annulla, rifai, seleziona tutto, salva, cerca",
+  "icon": "keyboard",
+  "shape": "buttons",
+  "show": {
+    "label": "TESTO"
+  },
+  "buttons": [
+    {
+      "label": "COPIA",
+      "icon": "save",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "C"
+        ]
+      }
+    },
+    {
+      "label": "INCOLLA",
+      "icon": "attach",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "V"
+        ]
+      }
+    },
+    {
+      "label": "TAGLIA",
+      "icon": "cut",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "X"
+        ]
+      }
+    },
+    {
+      "label": "ANNULLA",
+      "icon": "undo",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "Z"
+        ]
+      }
+    },
+    {
+      "label": "RIFAI",
+      "icon": "redo",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "Y"
+        ]
+      }
+    },
+    {
+      "label": "TUTTO",
+      "icon": "check",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "A"
+        ]
+      }
+    },
+    {
+      "label": "SALVA",
+      "icon": "save",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "S"
+        ]
+      }
+    },
+    {
+      "label": "CERCA",
+      "icon": "target",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "F"
+        ]
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

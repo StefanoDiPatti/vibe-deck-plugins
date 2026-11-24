@@ -1,0 +1,21 @@
+{
+  "name": "Upload",
+  "description": "Velocità di upload adesso",
+  "icon": "up",
+  "shape": "value",
+  "source": {
+    "type": "pc"
+  },
+  "every": 2,
+  "show": {
+    "label": "UPLOAD",
+    "icon": "up",
+    "value": "{{net.upMbps|round:1}}",
+    "unit": "Mbps",
+    "sub": "{{net.name}}"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

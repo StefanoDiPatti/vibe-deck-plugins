@@ -1,0 +1,25 @@
+{
+  "name": "Qualità dell'aria",
+  "description": "Indice europeo della qualità dell'aria: più è basso, meglio è (Open-Meteo)",
+  "icon": "cloud",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=41.89&longitude=12.49&current=european_aqi,pm10,pm2_5&timezone=auto"
+  },
+  "every": 1800,
+  "show": {
+    "label": "QUALITÀ DELL'ARIA",
+    "icon": "cloudy",
+    "value": "{{current.european_aqi}}",
+    "unit": "AQI",
+    "sub": "PM2.5 {{current.pm2_5}} · PM10 {{current.pm10}} µg/m³",
+    "bar": "{{current.european_aqi}}",
+    "warn": 40,
+    "hot": 80
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

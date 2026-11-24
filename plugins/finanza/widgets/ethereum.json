@@ -1,0 +1,26 @@
+{
+  "name": "Ethereum",
+  "description": "Prezzo di Ethereum in euro e variazione nelle 24 ore (CoinGecko)",
+  "icon": "bolt",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=eur&include_24hr_change=true"
+  },
+  "every": 300,
+  "show": {
+    "label": "ETHEREUM",
+    "icon": "bolt",
+    "value": "{{ethereum.eur|round:2}}",
+    "unit": "€",
+    "sub": "24 h: {{ethereum.eur_24h_change|round:2}}%"
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://www.coingecko.com/it/monete/ethereum"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

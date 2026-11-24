@@ -1,0 +1,92 @@
+{
+  "name": "YouTube a voce",
+  "description": "Con YouTube in primo piano: \"pausa\", \"avanti\", \"indietro\", \"schermo intero\", \"muto\", \"sottotitoli\"",
+  "icon": "mic",
+  "shape": "voice",
+  "show": {
+    "label": "YOUTUBE A VOCE"
+  },
+  "voice": {
+    "placeholder": "Di' un comando…",
+    "commands": [
+      {
+        "say": [
+          "pausa",
+          "play",
+          "riprendi"
+        ],
+        "action": {
+          "type": "key",
+          "key": "K"
+        }
+      },
+      {
+        "say": [
+          "avanti",
+          "vai avanti"
+        ],
+        "action": {
+          "type": "key",
+          "key": "L"
+        }
+      },
+      {
+        "say": [
+          "indietro",
+          "torna indietro"
+        ],
+        "action": {
+          "type": "key",
+          "key": "J"
+        }
+      },
+      {
+        "say": [
+          "schermo intero"
+        ],
+        "action": {
+          "type": "key",
+          "key": "F"
+        }
+      },
+      {
+        "say": [
+          "muto",
+          "togli l'audio"
+        ],
+        "action": {
+          "type": "key",
+          "key": "M"
+        }
+      },
+      {
+        "say": [
+          "sottotitoli"
+        ],
+        "action": {
+          "type": "key",
+          "key": "C"
+        }
+      },
+      {
+        "say": [
+          "prossimo video",
+          "video successivo"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "SHIFT",
+            "N"
+          ]
+        }
+      }
+    ]
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

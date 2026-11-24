@@ -1,0 +1,86 @@
+{
+  "name": "Finestre di Windows",
+  "description": "Affianca, ingrandisci, riduci, cambia finestra",
+  "icon": "window",
+  "shape": "buttons",
+  "show": {
+    "label": "FINESTRE"
+  },
+  "buttons": [
+    {
+      "label": "SINISTRA",
+      "icon": "back",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "LEFT"
+        ]
+      }
+    },
+    {
+      "label": "INGRANDISCI",
+      "icon": "fullscreen",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "UP"
+        ]
+      }
+    },
+    {
+      "label": "DESTRA",
+      "icon": "next",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "RIGHT"
+        ]
+      }
+    },
+    {
+      "label": "RIDUCI",
+      "icon": "minimize",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "DOWN"
+        ]
+      }
+    },
+    {
+      "label": "CAMBIA",
+      "icon": "layout",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "TAB"
+        ]
+      }
+    },
+    {
+      "label": "DESKTOP",
+      "icon": "desktop",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "D"
+        ]
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  },
+  "platforms": [
+    "windows"
+  ]
+}

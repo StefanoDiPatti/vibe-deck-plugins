@@ -1,0 +1,30 @@
+{
+  "name": "Notizie dallo spazio",
+  "description": "Le ultime notizie su razzi, missioni e astronomia (Spaceflight News)",
+  "icon": "globe",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://api.spaceflightnewsapi.net/v4/articles/?limit=15"
+  },
+  "every": 1800,
+  "show": {
+    "label": "SPAZIO",
+    "items": "{{results}}",
+    "max": 15,
+    "item": {
+      "title": "{{item.title}}",
+      "sub": "{{item.news_site}} · {{item.published_at|ago}}"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "{{item.url}}"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

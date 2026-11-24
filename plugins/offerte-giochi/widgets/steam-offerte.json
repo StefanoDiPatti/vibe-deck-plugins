@@ -1,0 +1,32 @@
+{
+  "name": "Offerte Steam",
+  "description": "I giochi in sconto su Steam adesso, tocco = apri la pagina",
+  "icon": "gamepad",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://store.steampowered.com/api/featuredcategories?cc=it&l=italian"
+  },
+  "every": 1800,
+  "show": {
+    "label": "OFFERTE STEAM",
+    "items": "{{specials.items}}",
+    "max": 15,
+    "item": {
+      "icon": "gamepad",
+      "title": "{{item.name}}",
+      "sub": "-{{item.discount_percent}}%",
+      "right": "{{item.final_price|div:100|round:2}} €"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://store.steampowered.com/app/{{item.id|url}}/"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

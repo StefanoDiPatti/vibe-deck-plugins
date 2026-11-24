@@ -1,0 +1,21 @@
+{
+  "name": "Euro / dollaro",
+  "description": "Il cambio euro-dollaro di oggi (BCE)",
+  "icon": "globe",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://api.frankfurter.dev/v1/latest?from=EUR&symbols=USD"
+  },
+  "every": 3600,
+  "show": {
+    "label": "EUR / USD",
+    "icon": "globe",
+    "value": "{{rates.USD|round:4}}",
+    "sub": "BCE · {{date|date}}"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

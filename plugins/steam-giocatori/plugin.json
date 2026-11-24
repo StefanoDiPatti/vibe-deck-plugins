@@ -1,0 +1,21 @@
+{
+  "id": "steam-giocatori",
+  "name": "Steam players",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "How many people are playing right now: Counter-Strike 2, Dota 2, PUBG, Apex Legends, GTA V, Rust, Baldur's Gate 3 and more",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "gaming"
+  ],
+  "permissions": {
+    "http": [
+      "api.steampowered.com"
+    ]
+  }
+}

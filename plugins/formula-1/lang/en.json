@@ -1,0 +1,11 @@
+{
+  "F1 · PILOTI": "F1 · DRIVERS",
+  "F1 · COSTRUTTORI": "F1 · CONSTRUCTORS",
+  "PROSSIMO GP": "NEXT GP",
+  "$rules": [
+    [
+      "^(\\d+) vittorie$",
+      "$1 wins"
+    ]
+  ]
+}

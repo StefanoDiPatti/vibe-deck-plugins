@@ -1,0 +1,78 @@
+{
+  "name": "Schede del browser",
+  "description": "Nuova scheda, chiudi, riapri, aggiorna, indietro, strumenti",
+  "icon": "globe",
+  "shape": "buttons",
+  "show": {
+    "label": "BROWSER"
+  },
+  "buttons": [
+    {
+      "label": "NUOVA",
+      "icon": "add",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "T"
+        ]
+      }
+    },
+    {
+      "label": "CHIUDI",
+      "icon": "close",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "W"
+        ]
+      }
+    },
+    {
+      "label": "RIAPRI",
+      "icon": "undo",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SHIFT",
+          "T"
+        ]
+      }
+    },
+    {
+      "label": "AGGIORNA",
+      "icon": "refresh",
+      "action": {
+        "type": "key",
+        "key": "F5"
+      }
+    },
+    {
+      "label": "INDIETRO",
+      "icon": "back",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "LEFT"
+        ]
+      }
+    },
+    {
+      "label": "STRUMENTI",
+      "icon": "code",
+      "action": {
+        "type": "key",
+        "key": "F12"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

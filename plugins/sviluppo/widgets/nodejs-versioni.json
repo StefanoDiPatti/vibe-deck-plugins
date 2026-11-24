@@ -1,0 +1,31 @@
+{
+  "name": "Node.js: versioni",
+  "description": "Le versioni di Node.js con la loro fine del supporto (endoflife.date)",
+  "icon": "code",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://endoflife.date/api/nodejs.json"
+  },
+  "every": 21600,
+  "show": {
+    "label": "NODE.JS",
+    "items": "{{.}}",
+    "max": 6,
+    "item": {
+      "title": "Node {{item.cycle}} · {{item.latest}}",
+      "sub": "fine supporto {{item.eol|date:year}}",
+      "right": "{{item.lts|yesno:LTS:}}"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://nodejs.org/"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

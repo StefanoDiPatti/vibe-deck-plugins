@@ -1,0 +1,16 @@
+{
+  "id": "comandi-musica",
+  "name": "Music controls",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Buttons and voice commands for the music playing on the PC: play, pause, next, previous, volume, mute",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "music"
+  ]
+}

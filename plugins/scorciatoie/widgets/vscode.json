@@ -1,0 +1,85 @@
+{
+  "name": "VS Code",
+  "description": "Comandi, file, terminale, barra laterale, formatta, commenta",
+  "icon": "code",
+  "shape": "buttons",
+  "show": {
+    "label": "VS CODE"
+  },
+  "buttons": [
+    {
+      "label": "COMANDI",
+      "icon": "keyboard",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SHIFT",
+          "P"
+        ]
+      }
+    },
+    {
+      "label": "FILE",
+      "icon": "folder",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "P"
+        ]
+      }
+    },
+    {
+      "label": "TERMINALE",
+      "icon": "terminal",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "BACKQUOTE"
+        ]
+      }
+    },
+    {
+      "label": "BARRA",
+      "icon": "layout",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "B"
+        ]
+      }
+    },
+    {
+      "label": "FORMATTA",
+      "icon": "sparkle",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "SHIFT",
+          "ALT",
+          "F"
+        ]
+      }
+    },
+    {
+      "label": "COMMENTA",
+      "icon": "chat",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SLASH"
+        ]
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

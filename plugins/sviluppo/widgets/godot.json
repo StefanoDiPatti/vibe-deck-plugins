@@ -1,0 +1,25 @@
+{
+  "name": "Godot: ultima versione",
+  "description": "L'ultima versione pubblicata di Godot su GitHub, tocco = note di rilascio",
+  "icon": "github",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://api.github.com/repos/godotengine/godot/releases/latest"
+  },
+  "every": 7200,
+  "show": {
+    "label": "GODOT",
+    "icon": "github",
+    "text": "{{tag_name}}",
+    "sub": "uscita {{published_at|ago}}"
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "{{html_url}}"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

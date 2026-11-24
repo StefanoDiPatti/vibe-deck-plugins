@@ -1,0 +1,22 @@
+{
+  "name": "Mercato crypto",
+  "description": "Il valore di tutte le crypto e la variazione nelle 24 ore (CoinGecko)",
+  "icon": "bolt",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://api.coingecko.com/api/v3/global"
+  },
+  "every": 1800,
+  "show": {
+    "label": "MERCATO CRYPTO",
+    "icon": "bolt",
+    "value": "{{data.total_market_cap.usd|div:1000000000|round|thousands}}",
+    "unit": "mld $",
+    "sub": "24 h: {{data.market_cap_change_percentage_24h_usd|round:2}}% · BTC {{data.market_cap_percentage.btc|round:1}}%"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}
