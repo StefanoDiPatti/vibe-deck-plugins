@@ -1,0 +1,24 @@
+{
+  "name": "Cerca su YouTube",
+  "description": "Detta cosa vuoi vedere: si apre la ricerca su YouTube sul PC",
+  "icon": "mic",
+  "shape": "voice",
+  "show": {
+    "label": "CERCA SU YOUTUBE"
+  },
+  "voice": {
+    "placeholder": "Cosa vuoi vedere?",
+    "commands": [],
+    "action": {
+      "type": "open_url",
+      "url": "https://www.youtube.com/results?search_query={{text|url}}"
+    },
+    "reply": "Cerco su YouTube"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

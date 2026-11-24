@@ -1,0 +1,32 @@
+{
+  "name": "Giochi gratis",
+  "description": "Giochi e contenuti gratis per PC (GamerPower), tocco = apri l'offerta",
+  "icon": "star",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://www.gamerpower.com/api/giveaways?platform=pc&sort-by=popularity"
+  },
+  "every": 3600,
+  "show": {
+    "label": "GRATIS PER PC",
+    "items": "{{.}}",
+    "max": 20,
+    "item": {
+      "icon": "star",
+      "title": "{{item.title}}",
+      "sub": "{{item.type}} · {{item.platforms}}",
+      "right": "{{item.worth}}"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "{{item.open_giveaway_url}}"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

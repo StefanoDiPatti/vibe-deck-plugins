@@ -1,0 +1,21 @@
+{
+  "name": "Download",
+  "description": "Velocità di download adesso",
+  "icon": "down",
+  "shape": "value",
+  "source": {
+    "type": "pc"
+  },
+  "every": 2,
+  "show": {
+    "label": "DOWNLOAD",
+    "icon": "down",
+    "value": "{{net.downMbps|round:1}}",
+    "unit": "Mbps",
+    "sub": "{{net.name}}"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

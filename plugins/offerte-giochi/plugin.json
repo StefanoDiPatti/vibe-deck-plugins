@@ -1,0 +1,25 @@
+{
+  "id": "offerte-giochi",
+  "name": "Game deals",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Steam specials, Epic Games promotions, free games and the best discounts across stores",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "gaming",
+    "deals"
+  ],
+  "permissions": {
+    "http": [
+      "store.steampowered.com",
+      "store-site-backend-static.ak.epicgames.com",
+      "www.gamerpower.com",
+      "www.cheapshark.com"
+    ]
+  }
+}

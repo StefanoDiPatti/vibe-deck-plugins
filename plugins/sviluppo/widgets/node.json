@@ -1,0 +1,25 @@
+{
+  "name": "Node.js: ultima versione",
+  "description": "L'ultima versione stabile di Node.js (endoflife.date)",
+  "icon": "code",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://endoflife.date/api/nodejs.json"
+  },
+  "every": 21600,
+  "show": {
+    "label": "NODE.JS",
+    "icon": "code",
+    "text": "{{0.latest}}",
+    "sub": "uscita {{0.latestReleaseDate|ago}}"
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://nodejs.org/"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

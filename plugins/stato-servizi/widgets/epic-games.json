@@ -1,0 +1,39 @@
+{
+  "name": "Stato di Epic Games",
+  "description": "Verde se Epic Games funziona, arancione se ha problemi (pagina di stato ufficiale)",
+  "icon": "target",
+  "shape": "status",
+  "source": {
+    "type": "http",
+    "url": "https://status.epicgames.com/api/v2/status.json"
+  },
+  "every": 120,
+  "show": {
+    "label": "EPIC GAMES",
+    "on": "{{status.indicator|map:ok}}",
+    "level": "{{status.indicator|map:colore}}",
+    "text": "{{status.description}}"
+  },
+  "maps": {
+    "ok": {
+      "none": "1",
+      "*": ""
+    },
+    "colore": {
+      "none": "ok",
+      "minor": "warn",
+      "maintenance": "warn",
+      "major": "hot",
+      "critical": "hot",
+      "*": "warn"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "{{page.url}}"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

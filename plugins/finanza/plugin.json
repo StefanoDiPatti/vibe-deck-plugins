@@ -1,0 +1,22 @@
+{
+  "id": "finanza",
+  "name": "Finance",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Euro exchange rates (ECB), trending coins, the global crypto market, Ethereum, Solana and Dogecoin",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "finance"
+  ],
+  "permissions": {
+    "http": [
+      "api.frankfurter.dev",
+      "api.coingecko.com"
+    ]
+  }
+}

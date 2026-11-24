@@ -1,0 +1,26 @@
+{
+  "name": "Dogecoin",
+  "description": "Prezzo di Dogecoin in euro e variazione nelle 24 ore (CoinGecko)",
+  "icon": "bolt",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=eur&include_24hr_change=true"
+  },
+  "every": 300,
+  "show": {
+    "label": "DOGECOIN",
+    "icon": "bolt",
+    "value": "{{dogecoin.eur|round:4}}",
+    "unit": "€",
+    "sub": "24 h: {{dogecoin.eur_24h_change|round:2}}%"
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://www.coingecko.com/it/monete/dogecoin"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

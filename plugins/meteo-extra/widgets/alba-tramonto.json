@@ -1,0 +1,21 @@
+{
+  "name": "Alba e tramonto",
+  "description": "A che ora sorge e tramonta il sole oggi (Open-Meteo)",
+  "icon": "sun",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=41.89&longitude=12.49&daily=sunrise,sunset,daylight_duration&forecast_days=1&timezone=auto"
+  },
+  "every": 3600,
+  "show": {
+    "label": "ALBA E TRAMONTO",
+    "icon": "sun",
+    "text": "{{daily.sunrise.0|date:time}} – {{daily.sunset.0|date:time}}",
+    "sub": "{{daily.daylight_duration.0|duration}} di luce"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

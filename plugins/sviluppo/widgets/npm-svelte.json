@@ -1,0 +1,25 @@
+{
+  "name": "npm: download di svelte",
+  "description": "Download settimanali del pacchetto svelte su npm",
+  "icon": "code",
+  "shape": "value",
+  "source": {
+    "type": "http",
+    "url": "https://api.npmjs.org/downloads/point/last-week/svelte"
+  },
+  "every": 21600,
+  "show": {
+    "label": "SVELTE · NPM",
+    "icon": "code",
+    "value": "{{downloads|thousands}}",
+    "sub": "download nell'ultima settimana"
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://www.npmjs.com/package/svelte"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

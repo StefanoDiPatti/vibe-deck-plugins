@@ -1,0 +1,65 @@
+{
+  "name": "Siti per sviluppatori",
+  "description": "GitHub, Stack Overflow, MDN, npm, Can I use, regex101",
+  "icon": "code",
+  "shape": "buttons",
+  "show": {
+    "label": "SVILUPPO"
+  },
+  "buttons": [
+    {
+      "label": "GITHUB",
+      "icon": "github",
+      "action": {
+        "type": "open_url",
+        "url": "https://github.com/"
+      }
+    },
+    {
+      "label": "STACK OVERFLOW",
+      "icon": "chat",
+      "action": {
+        "type": "open_url",
+        "url": "https://stackoverflow.com/"
+      }
+    },
+    {
+      "label": "MDN",
+      "icon": "code",
+      "action": {
+        "type": "open_url",
+        "url": "https://developer.mozilla.org/"
+      }
+    },
+    {
+      "label": "NPM",
+      "icon": "cube",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.npmjs.com/"
+      }
+    },
+    {
+      "label": "CAN I USE",
+      "icon": "check",
+      "action": {
+        "type": "open_url",
+        "url": "https://caniuse.com/"
+      }
+    },
+    {
+      "label": "REGEX101",
+      "icon": "keyboard",
+      "action": {
+        "type": "open_url",
+        "url": "https://regex101.com/"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

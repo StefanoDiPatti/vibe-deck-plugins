@@ -1,0 +1,25 @@
+{
+  "name": "Python: versione attuale",
+  "description": "L'ultima versione di Python e fino a quando è supportata (endoflife.date)",
+  "icon": "code",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://endoflife.date/api/python.json"
+  },
+  "every": 21600,
+  "show": {
+    "label": "PYTHON",
+    "icon": "code",
+    "text": "{{0.latest}}",
+    "sub": "supporto fino al {{0.eol|date:year}}"
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://www.python.org/downloads/"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

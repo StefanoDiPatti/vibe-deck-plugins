@@ -1,0 +1,79 @@
+{
+  "name": "Desktop virtuali",
+  "description": "Nuovo, precedente, successivo, chiudi, vista attività",
+  "icon": "desktop",
+  "shape": "buttons",
+  "show": {
+    "label": "DESKTOP VIRTUALI"
+  },
+  "buttons": [
+    {
+      "label": "NUOVO",
+      "icon": "add",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "CTRL",
+          "D"
+        ]
+      }
+    },
+    {
+      "label": "PRECEDENTE",
+      "icon": "back",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "CTRL",
+          "LEFT"
+        ]
+      }
+    },
+    {
+      "label": "SUCCESSIVO",
+      "icon": "next",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "CTRL",
+          "RIGHT"
+        ]
+      }
+    },
+    {
+      "label": "CHIUDI",
+      "icon": "close",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "CTRL",
+          "F4"
+        ]
+      }
+    },
+    {
+      "label": "VISTA",
+      "icon": "layout",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "TAB"
+        ]
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  },
+  "platforms": [
+    "windows"
+  ]
+}

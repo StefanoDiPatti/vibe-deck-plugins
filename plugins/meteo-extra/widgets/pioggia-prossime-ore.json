@@ -1,0 +1,57 @@
+{
+  "name": "Pioggia nelle prossime ore",
+  "description": "Probabilità di pioggia e temperatura ora per ora (Open-Meteo)",
+  "icon": "rain",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=41.89&longitude=12.49&hourly=precipitation_probability,temperature_2m,weather_code&forecast_hours=12&timezone=auto"
+  },
+  "every": 1800,
+  "show": {
+    "label": "PROSSIME ORE",
+    "items": "{{hourly|zip}}",
+    "max": 12,
+    "item": {
+      "icon": "{{item.weather_code|map:icone}}",
+      "title": "{{item.time|date:time}}",
+      "sub": "{{item.temperature_2m|round}}°",
+      "right": "{{item.precipitation_probability}}%",
+      "bar": "{{item.precipitation_probability}}",
+      "warn": 40,
+      "hot": 70
+    }
+  },
+  "maps": {
+    "icone": {
+      "0": "sun",
+      "1": "partly",
+      "2": "partly",
+      "3": "cloudy",
+      "45": "fog",
+      "48": "fog",
+      "51": "drizzle",
+      "53": "drizzle",
+      "55": "drizzle",
+      "61": "rain",
+      "63": "rain",
+      "65": "rain",
+      "71": "snow",
+      "73": "snow",
+      "75": "snow",
+      "80": "showers",
+      "81": "showers",
+      "82": "showers",
+      "95": "storm",
+      "96": "storm",
+      "99": "storm",
+      "*": "cloudy"
+    }
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

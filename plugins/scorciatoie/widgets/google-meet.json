@@ -1,0 +1,39 @@
+{
+  "name": "Google Meet",
+  "description": "Microfono e videocamera (con Meet in primo piano)",
+  "icon": "headset",
+  "shape": "buttons",
+  "show": {
+    "label": "MEET"
+  },
+  "buttons": [
+    {
+      "label": "MICROFONO",
+      "icon": "mic",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "D"
+        ]
+      }
+    },
+    {
+      "label": "VIDEO",
+      "icon": "camera",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "E"
+        ]
+      }
+    }
+  ],
+  "size": {
+    "w": 2,
+    "h": 1,
+    "minW": 2,
+    "minH": 1
+  }
+}

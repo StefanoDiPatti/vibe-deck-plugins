@@ -1,0 +1,31 @@
+{
+  "name": "Migliori sconti",
+  "description": "Le offerte migliori tra i negozi di giochi per PC (CheapShark, prezzi in dollari)",
+  "icon": "star",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://www.cheapshark.com/api/1.0/deals?pageSize=15"
+  },
+  "every": 3600,
+  "show": {
+    "label": "SCONTI",
+    "items": "{{.}}",
+    "max": 15,
+    "item": {
+      "title": "{{item.title}}",
+      "sub": "-{{item.savings|round}}% · Steam {{item.steamRatingPercent|default:–}}%",
+      "right": "${{item.salePrice}}"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://www.cheapshark.com/redirect?dealID={{item.dealID|url}}"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

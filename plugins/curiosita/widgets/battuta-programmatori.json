@@ -1,0 +1,21 @@
+{
+  "name": "Battuta da programmatori",
+  "description": "Una battuta sulla programmazione, cambia ogni ora (JokeAPI)",
+  "icon": "code",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://v2.jokeapi.dev/joke/Programming?type=single&safe-mode"
+  },
+  "every": 3600,
+  "show": {
+    "label": "BATTUTA",
+    "text": "{{joke}}"
+  },
+  "size": {
+    "w": 4,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

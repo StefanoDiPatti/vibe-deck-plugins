@@ -1,0 +1,21 @@
+{
+  "name": "Un consiglio",
+  "description": "Un consiglio a caso, cambia ogni ora (Advice Slip)",
+  "icon": "chat",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://api.adviceslip.com/advice"
+  },
+  "every": 3600,
+  "show": {
+    "label": "CONSIGLIO",
+    "text": "{{slip.advice}}"
+  },
+  "size": {
+    "w": 4,
+    "h": 1,
+    "minW": 2,
+    "minH": 1
+  }
+}

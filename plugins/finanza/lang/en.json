@@ -1,0 +1,14 @@
+{
+  "CRYPTO DI TENDENZA": "TRENDING COINS",
+  "MERCATO CRYPTO": "CRYPTO MARKET",
+  "$rules": [
+    [
+      "^posizione (.+)$",
+      "rank $1"
+    ],
+    [
+      "^BCE · (.+)$",
+      "ECB · $1"
+    ]
+  ]
+}

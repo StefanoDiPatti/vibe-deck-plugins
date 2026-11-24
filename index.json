@@ -2,11 +2,60 @@
   "format": 1,
   "plugins": [
     {
+      "id": "classifiche-musica",
+      "name": "Music charts",
+      "description": "Most played songs, albums and podcasts in Italy and in the US (Apple), and the most listened radio stations",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "music"
+      ],
+      "permissions": {
+        "http": [
+          "rss.marketingtools.apple.com",
+          "de1.api.radio-browser.info"
+        ]
+      },
+      "icon": "radio",
+      "widgets": 5,
+      "pages": 0,
+      "url": "packages/classifiche-musica-1.0.0.vdp.json",
+      "sha256": "6f8b854c32d2283f551c6d735138274659e17ed07c00fde57e8e125107feba11",
+      "size": 3259
+    },
+    {
+      "id": "comandi-musica",
+      "name": "Music controls",
+      "description": "Buttons and voice commands for the music playing on the PC: play, pause, next, previous, volume, mute",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "music"
+      ],
+      "permissions": {},
+      "icon": "music",
+      "widgets": 2,
+      "pages": 0,
+      "url": "packages/comandi-musica-1.0.0.vdp.json",
+      "sha256": "823ba490e1c688e05587a8b4ed51a8eefd11920eefa95047c511a1e81ed0a83b",
+      "size": 2155
+    },
+    {
       "id": "crypto",
       "name": "Crypto",
       "description": "Bitcoin and Ethereum prices in euro with the 24 h change (CoinGecko, no key)",
       "author": "StefanoDiPatti",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "engine": ">=2.2.0",
       "platforms": [
         "windows",
@@ -23,9 +72,92 @@
       "icon": "bolt",
       "widgets": 2,
       "pages": 0,
-      "url": "packages/crypto-1.0.0.vdp.json",
-      "sha256": "37f75e65aceebe7d5a9ed4212682da9de84552ccdce65edfea57ef5d91da20e7",
-      "size": 1431
+      "url": "packages/crypto-1.1.0.vdp.json",
+      "sha256": "964151185d6415024b01b95cd01c74a09c344f0cbd0f02eacf9a696fc757bcd5",
+      "size": 1461
+    },
+    {
+      "id": "curiosita",
+      "name": "Curiosities",
+      "description": "Quote of the day, programmer jokes, dad jokes, useless facts and random advice (in English)",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "fun"
+      ],
+      "permissions": {
+        "http": [
+          "zenquotes.io",
+          "v2.jokeapi.dev",
+          "icanhazdadjoke.com",
+          "uselessfacts.jsph.pl",
+          "api.adviceslip.com"
+        ]
+      },
+      "icon": "sparkle",
+      "widgets": 5,
+      "pages": 0,
+      "url": "packages/curiosita-1.0.0.vdp.json",
+      "sha256": "88c3807d6f181d33a4a962449b2bc1d6e147a3da74ef176e553947c54c00237d",
+      "size": 2245
+    },
+    {
+      "id": "finanza",
+      "name": "Finance",
+      "description": "Euro exchange rates (ECB), trending coins, the global crypto market, Ethereum, Solana and Dogecoin",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "finance"
+      ],
+      "permissions": {
+        "http": [
+          "api.frankfurter.dev",
+          "api.coingecko.com"
+        ]
+      },
+      "icon": "globe",
+      "widgets": 7,
+      "pages": 0,
+      "url": "packages/finanza-1.0.0.vdp.json",
+      "sha256": "e58e82949d2e2ebae9fc44ae7c7feb03ce95960a7d662f42169886cd2271dafa",
+      "size": 4259
+    },
+    {
+      "id": "formula-1",
+      "name": "Formula 1",
+      "description": "Drivers and constructors standings and the next Grand Prix of the current season (Jolpica F1)",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "sport"
+      ],
+      "permissions": {
+        "http": [
+          "api.jolpi.ca"
+        ]
+      },
+      "icon": "flag",
+      "widgets": 3,
+      "pages": 0,
+      "url": "packages/formula-1-1.0.0.vdp.json",
+      "sha256": "4c43724f921cfa4ed0c6a5fb601f4c88ec5771d15247a536993c8d46b18125c1",
+      "size": 2120
     },
     {
       "id": "hacker-news",
@@ -55,11 +187,268 @@
       "size": 1066
     },
     {
-      "id": "terremoti",
-      "name": "Terremoti",
-      "description": "Latest earthquakes of magnitude 2.5+ in the world (USGS), newest first; tap one to open its details",
+      "id": "link-rapidi",
+      "name": "Quick links",
+      "description": "One-tap buttons that open sites on the PC: AI assistants, Google, social networks, streaming, game stores, developer sites, shopping, Microsoft 365, maps",
       "author": "StefanoDiPatti",
       "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "productivity",
+        "links"
+      ],
+      "permissions": {},
+      "icon": "sparkle",
+      "widgets": 9,
+      "pages": 0,
+      "url": "packages/link-rapidi-1.0.0.vdp.json",
+      "sha256": "22dcef064ad4ead80204d4b47567bf3fbea9b31b72d15f45b8bd94a9b0f393fd",
+      "size": 7819
+    },
+    {
+      "id": "meteo-extra",
+      "name": "Weather extra",
+      "description": "Air quality, PM2.5 and PM10, UV index, sunrise and sunset, sea waves and rain in the next hours (Open-Meteo, no key; Rome by default)",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "weather"
+      ],
+      "permissions": {
+        "http": [
+          "air-quality-api.open-meteo.com",
+          "api.open-meteo.com",
+          "marine-api.open-meteo.com"
+        ]
+      },
+      "icon": "sun",
+      "widgets": 6,
+      "pages": 0,
+      "url": "packages/meteo-extra-1.0.0.vdp.json",
+      "sha256": "54ca81c67d727243a1f083ba7aadef9915cc931a5be5e0bad00bbaba98368ac0",
+      "size": 4467
+    },
+    {
+      "id": "offerte-giochi",
+      "name": "Game deals",
+      "description": "Steam specials, Epic Games promotions, free games and the best discounts across stores",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "gaming",
+        "deals"
+      ],
+      "permissions": {
+        "http": [
+          "store.steampowered.com",
+          "store-site-backend-static.ak.epicgames.com",
+          "www.gamerpower.com",
+          "www.cheapshark.com"
+        ]
+      },
+      "icon": "gamepad",
+      "widgets": 4,
+      "pages": 0,
+      "url": "packages/offerte-giochi-1.0.0.vdp.json",
+      "sha256": "9996425975906538a0a3c89bea3e3fb5236cf261ec005a6762db8bf5da099893",
+      "size": 2930
+    },
+    {
+      "id": "scorciatoie",
+      "name": "Shortcuts",
+      "description": "Ready-made shortcut buttons: windows and virtual desktops, browser tabs, text editing, VS Code, YouTube, Teams, Zoom, Meet, File Explorer, screenshots, emoji and clipboard",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "productivity"
+      ],
+      "permissions": {},
+      "icon": "globe",
+      "widgets": 12,
+      "pages": 0,
+      "url": "packages/scorciatoie-1.0.0.vdp.json",
+      "sha256": "eeafb385796d883377cf05e36010f520b60412ac9a2091cc6ae15cbd754a607c",
+      "size": 9281
+    },
+    {
+      "id": "sistema",
+      "name": "System",
+      "description": "More data of the PC: CPU and GPU temperature, download and upload speed, free RAM, video memory",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "system"
+      ],
+      "permissions": {},
+      "icon": "down",
+      "widgets": 6,
+      "pages": 0,
+      "url": "packages/sistema-1.0.0.vdp.json",
+      "sha256": "c206be733cc00e20f1adeb24af30eca5ef8e00bf7afc038af64e49561838c1da",
+      "size": 2379
+    },
+    {
+      "id": "spazio-scienza",
+      "name": "Space and science",
+      "description": "Where the ISS is now, space news, upcoming rocket launches and the latest earthquakes in Italy (INGV)",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "science",
+        "news"
+      ],
+      "permissions": {
+        "http": [
+          "api.wheretheiss.at",
+          "api.spaceflightnewsapi.net",
+          "ll.thespacedevs.com",
+          "webservices.ingv.it"
+        ]
+      },
+      "icon": "globe",
+      "widgets": 4,
+      "pages": 0,
+      "url": "packages/spazio-scienza-1.0.0.vdp.json",
+      "sha256": "7e3233de08ba30febc0f8cee0f3bf15b10f5f55f634967a8dbf237f79a8a1a79",
+      "size": 2985
+    },
+    {
+      "id": "stato-servizi",
+      "name": "Service status",
+      "description": "Is it down or is it me? Green or orange dot for Claude, OpenAI, GitHub, Discord, Cloudflare, npm, Vercel and more, from their official status pages",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "developer",
+        "tools"
+      ],
+      "permissions": {
+        "http": [
+          "status.claude.com",
+          "status.openai.com",
+          "www.githubstatus.com",
+          "discordstatus.com",
+          "www.cloudflarestatus.com",
+          "status.npmjs.org",
+          "www.vercel-status.com",
+          "www.netlifystatus.com",
+          "www.dockerstatus.com",
+          "www.redditstatus.com",
+          "www.zoomstatus.com",
+          "status.dropbox.com",
+          "status.figma.com",
+          "status.epicgames.com",
+          "status.twitch.com",
+          "linearstatus.com",
+          "www.notion-status.com",
+          "status.atlassian.com"
+        ]
+      },
+      "icon": "target",
+      "widgets": 18,
+      "pages": 0,
+      "url": "packages/stato-servizi-1.0.0.vdp.json",
+      "sha256": "b0e57a7b3d16f240829228563bc75b9c86a801e38958afdf62d0b97c419be296",
+      "size": 11760
+    },
+    {
+      "id": "steam-giocatori",
+      "name": "Steam players",
+      "description": "How many people are playing right now: Counter-Strike 2, Dota 2, PUBG, Apex Legends, GTA V, Rust, Baldur's Gate 3 and more",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "gaming"
+      ],
+      "permissions": {
+        "http": [
+          "api.steampowered.com"
+        ]
+      },
+      "icon": "gamepad",
+      "widgets": 10,
+      "pages": 0,
+      "url": "packages/steam-giocatori-1.0.0.vdp.json",
+      "sha256": "292a4d6a52aada157edd658305fa3f9ee680fa0ff6bc8753e48cea0b954d9b19",
+      "size": 5796
+    },
+    {
+      "id": "sviluppo",
+      "name": "Developer news",
+      "description": "Lobsters, dev.to, Show and Ask HN, npm downloads, the latest releases of Node.js, VS Code, Deno, Bun, Godot and Rust, current Python and Node.js",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "developer",
+        "news"
+      ],
+      "permissions": {
+        "http": [
+          "lobste.rs",
+          "dev.to",
+          "hn.algolia.com",
+          "api.npmjs.org",
+          "endoflife.date",
+          "api.github.com"
+        ]
+      },
+      "icon": "link",
+      "widgets": 15,
+      "pages": 0,
+      "url": "packages/sviluppo-1.0.0.vdp.json",
+      "sha256": "3515906156fab810b4742c7669acea84437472e06a038422f426ae1d8e52f758",
+      "size": 8109
+    },
+    {
+      "id": "terremoti",
+      "name": "Terremoti",
+      "description": "Latest earthquakes of magnitude 2.5+ in the world (USGS), newest first, the strongest in orange and red; tap one to open its details",
+      "author": "StefanoDiPatti",
+      "version": "1.1.0",
       "engine": ">=2.2.0",
       "platforms": [
         "windows",
@@ -77,9 +466,32 @@
       "icon": "target",
       "widgets": 1,
       "pages": 0,
-      "url": "packages/terremoti-1.0.0.vdp.json",
-      "sha256": "3ea35eb7572a720aeafb398bf4c4d88439a3d4c98c1bcc0f881f2a580503b878",
-      "size": 1045
+      "url": "packages/terremoti-1.1.0.vdp.json",
+      "sha256": "20ac91153791e6b48a4342af3e4d9384cb00d02cc609c2633f686ea6f6f04242",
+      "size": 1165
+    },
+    {
+      "id": "voce",
+      "name": "Voice commands",
+      "description": "Voice packs for the tablet microphone: browser, Windows, YouTube, and \"search on YouTube / Wikipedia\" for anything else (Italian phrases)",
+      "author": "StefanoDiPatti",
+      "version": "1.0.0",
+      "engine": ">=2.2.0",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "tags": [
+        "productivity",
+        "voice"
+      ],
+      "permissions": {},
+      "icon": "mic",
+      "widgets": 5,
+      "pages": 0,
+      "url": "packages/voce-1.0.0.vdp.json",
+      "sha256": "9a6517e800ef03f517be6ca673afa3df80f4c0e04d0b16741e3850b9a50963ce",
+      "size": 4704
     }
   ]
 }

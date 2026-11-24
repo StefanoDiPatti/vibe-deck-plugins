@@ -1,0 +1,12 @@
+{
+  "$rules": [
+    [
+      "^(.+) · ([\\d.]+) ascolti$",
+      "$1 · $2 listens"
+    ]
+  ],
+  "TOP BRANI · ITALIA": "TOP SONGS · ITALY",
+  "TOP ALBUM · ITALIA": "TOP ALBUMS · ITALY",
+  "TOP PODCAST · ITALIA": "TOP PODCASTS · ITALY",
+  "TOP BRANI · USA": "TOP SONGS · USA"
+}

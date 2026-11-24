@@ -1,0 +1,21 @@
+{
+  "name": "Memoria video",
+  "description": "Memoria della scheda video usata (serve nvidia-smi)",
+  "icon": "cpu",
+  "shape": "value",
+  "source": {
+    "type": "pc"
+  },
+  "every": 5,
+  "show": {
+    "label": "VRAM",
+    "icon": "cpu",
+    "value": "{{gpu.memUsedGb|default:N/D}}",
+    "unit": "/ {{gpu.memTotalGb|default:–}} GB",
+    "sub": "{{gpu.name|default:scheda video}}"
+  },
+  "size": {
+    "w": 2,
+    "h": 1
+  }
+}

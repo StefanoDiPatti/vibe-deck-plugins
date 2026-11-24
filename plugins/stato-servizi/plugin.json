@@ -1,0 +1,39 @@
+{
+  "id": "stato-servizi",
+  "name": "Service status",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Is it down or is it me? Green or orange dot for Claude, OpenAI, GitHub, Discord, Cloudflare, npm, Vercel and more, from their official status pages",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "developer",
+    "tools"
+  ],
+  "permissions": {
+    "http": [
+      "status.claude.com",
+      "status.openai.com",
+      "www.githubstatus.com",
+      "discordstatus.com",
+      "www.cloudflarestatus.com",
+      "status.npmjs.org",
+      "www.vercel-status.com",
+      "www.netlifystatus.com",
+      "www.dockerstatus.com",
+      "www.redditstatus.com",
+      "www.zoomstatus.com",
+      "status.dropbox.com",
+      "status.figma.com",
+      "status.epicgames.com",
+      "status.twitch.com",
+      "linearstatus.com",
+      "www.notion-status.com",
+      "status.atlassian.com"
+    ]
+  }
+}

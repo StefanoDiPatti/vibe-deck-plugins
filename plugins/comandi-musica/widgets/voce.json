@@ -1,0 +1,87 @@
+{
+  "name": "Musica a voce",
+  "description": "Di' \"pausa\", \"avanti\", \"indietro\", \"più forte\", \"più piano\", \"muto\"",
+  "icon": "mic",
+  "shape": "voice",
+  "show": {
+    "label": "MUSICA A VOCE"
+  },
+  "voice": {
+    "placeholder": "Di' un comando per la musica…",
+    "commands": [
+      {
+        "say": [
+          "pausa",
+          "play",
+          "riprendi",
+          "ferma"
+        ],
+        "action": {
+          "type": "media",
+          "command": "play_pause"
+        }
+      },
+      {
+        "say": [
+          "avanti",
+          "prossima",
+          "salta"
+        ],
+        "action": {
+          "type": "media",
+          "command": "next"
+        }
+      },
+      {
+        "say": [
+          "indietro",
+          "precedente"
+        ],
+        "action": {
+          "type": "media",
+          "command": "previous"
+        }
+      },
+      {
+        "say": [
+          "più forte",
+          "alza il volume",
+          "volume su"
+        ],
+        "action": {
+          "type": "media",
+          "command": "volume_up"
+        },
+        "reply": "Volume su"
+      },
+      {
+        "say": [
+          "più piano",
+          "abbassa il volume",
+          "volume giù"
+        ],
+        "action": {
+          "type": "media",
+          "command": "volume_down"
+        },
+        "reply": "Volume giù"
+      },
+      {
+        "say": [
+          "muto",
+          "silenzio"
+        ],
+        "action": {
+          "type": "media",
+          "command": "mute"
+        }
+      }
+    ]
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

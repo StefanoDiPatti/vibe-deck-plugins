@@ -1,0 +1,78 @@
+{
+  "name": "Microsoft Teams",
+  "description": "Microfono, videocamera, alza la mano, condividi, esci",
+  "icon": "headset",
+  "shape": "buttons",
+  "show": {
+    "label": "TEAMS"
+  },
+  "buttons": [
+    {
+      "label": "MICROFONO",
+      "icon": "mic",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SHIFT",
+          "M"
+        ]
+      }
+    },
+    {
+      "label": "VIDEO",
+      "icon": "camera",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SHIFT",
+          "O"
+        ]
+      }
+    },
+    {
+      "label": "MANO",
+      "icon": "person",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SHIFT",
+          "K"
+        ]
+      }
+    },
+    {
+      "label": "CONDIVIDI",
+      "icon": "desktop",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SHIFT",
+          "E"
+        ]
+      }
+    },
+    {
+      "label": "ESCI",
+      "icon": "hangup",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SHIFT",
+          "H"
+        ]
+      },
+      "color": "#8b1d1d"
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

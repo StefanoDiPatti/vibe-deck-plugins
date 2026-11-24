@@ -1,0 +1,22 @@
+{
+  "id": "classifiche-musica",
+  "name": "Music charts",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Most played songs, albums and podcasts in Italy and in the US (Apple), and the most listened radio stations",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "music"
+  ],
+  "permissions": {
+    "http": [
+      "rss.marketingtools.apple.com",
+      "de1.api.radio-browser.info"
+    ]
+  }
+}

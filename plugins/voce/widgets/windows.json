@@ -1,0 +1,127 @@
+{
+  "name": "Windows a voce",
+  "description": "Di' \"desktop\", \"blocca il pc\", \"screenshot\", \"gestione attività\", \"impostazioni\", \"esplora file\"",
+  "icon": "mic",
+  "shape": "voice",
+  "show": {
+    "label": "WINDOWS A VOCE"
+  },
+  "voice": {
+    "placeholder": "Di' un comando…",
+    "commands": [
+      {
+        "say": [
+          "desktop",
+          "mostra il desktop"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "WIN",
+            "D"
+          ]
+        }
+      },
+      {
+        "say": [
+          "blocca il pc",
+          "blocca il computer"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "WIN",
+            "L"
+          ]
+        },
+        "reply": "PC bloccato"
+      },
+      {
+        "say": [
+          "screenshot",
+          "cattura lo schermo"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "WIN",
+            "SHIFT",
+            "S"
+          ]
+        }
+      },
+      {
+        "say": [
+          "gestione attività",
+          "task manager"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "CTRL",
+            "SHIFT",
+            "ESC"
+          ]
+        }
+      },
+      {
+        "say": [
+          "impostazioni"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "WIN",
+            "I"
+          ]
+        }
+      },
+      {
+        "say": [
+          "esplora file",
+          "apri le cartelle"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "WIN",
+            "E"
+          ]
+        }
+      },
+      {
+        "say": [
+          "cambia finestra"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "ALT",
+            "TAB"
+          ]
+        }
+      },
+      {
+        "say": [
+          "emoji"
+        ],
+        "action": {
+          "type": "hotkey",
+          "keys": [
+            "WIN",
+            "PERIOD"
+          ]
+        }
+      }
+    ]
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  },
+  "platforms": [
+    "windows"
+  ]
+}

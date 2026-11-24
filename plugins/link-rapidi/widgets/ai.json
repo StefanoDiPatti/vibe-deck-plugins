@@ -1,0 +1,58 @@
+{
+  "name": "Assistenti AI",
+  "description": "Claude, ChatGPT, Gemini, Perplexity, Copilot",
+  "icon": "sparkle",
+  "shape": "buttons",
+  "show": {
+    "label": "AI"
+  },
+  "buttons": [
+    {
+      "label": "CLAUDE",
+      "icon": "sparkle",
+      "action": {
+        "type": "open_url",
+        "url": "https://claude.ai/new"
+      },
+      "color": "#b4552d"
+    },
+    {
+      "label": "CHATGPT",
+      "icon": "chat",
+      "action": {
+        "type": "open_url",
+        "url": "https://chatgpt.com/"
+      }
+    },
+    {
+      "label": "GEMINI",
+      "icon": "star",
+      "action": {
+        "type": "open_url",
+        "url": "https://gemini.google.com/"
+      }
+    },
+    {
+      "label": "PERPLEXITY",
+      "icon": "target",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.perplexity.ai/"
+      }
+    },
+    {
+      "label": "COPILOT",
+      "icon": "robot",
+      "action": {
+        "type": "open_url",
+        "url": "https://copilot.microsoft.com/"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

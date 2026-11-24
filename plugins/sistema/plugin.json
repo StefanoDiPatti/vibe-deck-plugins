@@ -1,0 +1,16 @@
+{
+  "id": "sistema",
+  "name": "System",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "More data of the PC: CPU and GPU temperature, download and upload speed, free RAM, video memory",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "system"
+  ]
+}

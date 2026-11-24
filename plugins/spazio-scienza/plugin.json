@@ -1,0 +1,25 @@
+{
+  "id": "spazio-scienza",
+  "name": "Space and science",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Where the ISS is now, space news, upcoming rocket launches and the latest earthquakes in Italy (INGV)",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "science",
+    "news"
+  ],
+  "permissions": {
+    "http": [
+      "api.wheretheiss.at",
+      "api.spaceflightnewsapi.net",
+      "ll.thespacedevs.com",
+      "webservices.ingv.it"
+    ]
+  }
+}

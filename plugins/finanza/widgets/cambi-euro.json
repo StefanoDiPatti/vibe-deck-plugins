@@ -1,0 +1,38 @@
+{
+  "name": "Cambi dell'euro",
+  "description": "Quanto vale 1 euro in dollari, sterline, franchi e yen (BCE, Frankfurter)",
+  "icon": "globe",
+  "shape": "bars",
+  "source": {
+    "type": "http",
+    "url": "https://api.frankfurter.dev/v1/latest?from=EUR&symbols=USD,GBP,CHF,JPY"
+  },
+  "every": 3600,
+  "show": {
+    "label": "1 EURO",
+    "rows": [
+      {
+        "label": "USD",
+        "value": "{{rates.USD|round:4}}"
+      },
+      {
+        "label": "GBP",
+        "value": "{{rates.GBP|round:4}}"
+      },
+      {
+        "label": "CHF",
+        "value": "{{rates.CHF|round:4}}"
+      },
+      {
+        "label": "JPY",
+        "value": "{{rates.JPY|round:2}}"
+      }
+    ]
+  },
+  "size": {
+    "w": 2,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

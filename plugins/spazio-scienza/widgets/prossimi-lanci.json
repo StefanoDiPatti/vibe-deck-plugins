@@ -1,0 +1,31 @@
+{
+  "name": "Prossimi lanci",
+  "description": "I prossimi lanci di razzi nel mondo (The Space Devs)",
+  "icon": "flag",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=8&mode=list"
+  },
+  "every": 3600,
+  "show": {
+    "label": "PROSSIMI LANCI",
+    "items": "{{results}}",
+    "max": 8,
+    "item": {
+      "icon": "flag",
+      "title": "{{item.name}}",
+      "sub": "{{item.net|date}} {{item.net|date:time}} · {{item.status.abbrev}}"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://www.nextspaceflight.com/launches/"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

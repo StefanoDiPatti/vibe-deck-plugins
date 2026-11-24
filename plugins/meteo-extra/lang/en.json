@@ -1,0 +1,19 @@
+{
+  "QUALITÀ DELL'ARIA": "AIR QUALITY",
+  "POLVERI SOTTILI": "FINE DUST",
+  "INDICE UV": "UV INDEX",
+  "massimo di oggi": "today's maximum",
+  "ALBA E TRAMONTO": "SUNRISE AND SUNSET",
+  "ONDE": "WAVES",
+  "PROSSIME ORE": "NEXT HOURS",
+  "$rules": [
+    [
+      "^(.+) di luce$",
+      "$1 of daylight"
+    ],
+    [
+      "^periodo (.+)$",
+      "period $1"
+    ]
+  ]
+}

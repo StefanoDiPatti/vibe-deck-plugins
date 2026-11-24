@@ -1,0 +1,73 @@
+{
+  "name": "Esplora file",
+  "description": "Apri, nuova cartella, rinomina, proprietà, su di un livello",
+  "icon": "folder",
+  "shape": "buttons",
+  "show": {
+    "label": "FILE"
+  },
+  "buttons": [
+    {
+      "label": "APRI",
+      "icon": "folder",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "WIN",
+          "E"
+        ]
+      }
+    },
+    {
+      "label": "NUOVA",
+      "icon": "add",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "CTRL",
+          "SHIFT",
+          "N"
+        ]
+      }
+    },
+    {
+      "label": "RINOMINA",
+      "icon": "keyboard",
+      "action": {
+        "type": "key",
+        "key": "F2"
+      }
+    },
+    {
+      "label": "PROPRIETÀ",
+      "icon": "info",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "ENTER"
+        ]
+      }
+    },
+    {
+      "label": "SU",
+      "icon": "up",
+      "action": {
+        "type": "hotkey",
+        "keys": [
+          "ALT",
+          "UP"
+        ]
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  },
+  "platforms": [
+    "windows"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Streaming video",
+  "description": "Netflix, Prime Video, Disney+, YouTube, Twitch, RaiPlay",
+  "icon": "film",
+  "shape": "buttons",
+  "show": {
+    "label": "STREAMING"
+  },
+  "buttons": [
+    {
+      "label": "NETFLIX",
+      "icon": "film",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.netflix.com/"
+      },
+      "color": "#8b1d1d"
+    },
+    {
+      "label": "PRIME VIDEO",
+      "icon": "play",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.primevideo.com/"
+      }
+    },
+    {
+      "label": "DISNEY+",
+      "icon": "star",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.disneyplus.com/"
+      }
+    },
+    {
+      "label": "YOUTUBE",
+      "icon": "film",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.youtube.com/"
+      }
+    },
+    {
+      "label": "TWITCH",
+      "icon": "live",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.twitch.tv/"
+      }
+    },
+    {
+      "label": "RAIPLAY",
+      "icon": "play",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.raiplay.it/"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

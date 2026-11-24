@@ -37,6 +37,35 @@ After changing a plugin:
 ```bash
 node scripts/build.js --dock ../vibe-deck/app          # validate with the deck and regenerate
 node scripts/build.js --check --dock ../vibe-deck/app  # what CI runs
+node scripts/verify.js --dock ../vibe-deck/app         # live check: every widget shows real data
+node scripts/verify.js --dock ../vibe-deck/app --only finanza
 ```
+
+`verify.js` asks the deck for a preview of every widget with today's data and reports empty values, empty lists,
+unresolved placeholders and sites that don't answer (public APIs have rate limits: check one plugin with `--only`).
+Widgets with the PC data (`pc` source) are checked on the deck itself.
+
+## Catalog
+
+| Plugin | Widgets |
+|---|---|
+| Service status | 18 status dots: Claude, OpenAI, GitHub, Discord, Cloudflare, npm, Vercel, Netlify, Docker, Reddit, Zoom, Dropbox, Figma, Epic Games, Twitch, Linear, Notion, Atlassian |
+| Steam players | 10: Counter-Strike 2, Dota 2, PUBG, Apex Legends, GTA V, Rust, Baldur's Gate 3, Helldivers 2, Team Fortress 2, Marvel Rivals |
+| Game deals | Steam specials, Epic Games promotions, free games (GamerPower), best deals (CheapShark) |
+| Music charts | top songs, albums and podcasts in Italy, top songs in the US, most listened radios |
+| Music controls | buttons and voice commands |
+| Developer news | Lobsters, dev.to, Show HN, Ask HN, npm downloads (React, Vue, Svelte), latest Node.js, VS Code, Deno, Bun, Godot, Rust, Python, Node.js versions |
+| Finance | euro exchange rates, EUR/USD, trending coins, crypto market, Ethereum, Solana, Dogecoin |
+| Crypto | Bitcoin, BTC and ETH |
+| Space and science | ISS position, space news, next launches, earthquakes in Italy (INGV) |
+| Earthquakes | latest earthquakes in the world (USGS) |
+| Weather extra | air quality, fine dust, UV index, sunrise and sunset, sea waves, rain in the next hours |
+| Curiosities | quote of the day, programmer jokes, dad jokes, useless facts, advice |
+| Formula 1 | drivers and constructors standings, next Grand Prix |
+| Hacker News | front page |
+| Shortcuts | windows, virtual desktops, browser, text, VS Code, YouTube, Teams, Zoom, Meet, File Explorer, screenshots, emoji and clipboard |
+| Quick links | AI, Google, social, streaming, game stores, developer sites, shopping, Microsoft 365, maps and travel |
+| Voice commands | browser, Windows, YouTube, search on YouTube, search on Wikipedia |
+| System | CPU and GPU temperature, download, upload, RAM, video memory |
 
 License: MIT.

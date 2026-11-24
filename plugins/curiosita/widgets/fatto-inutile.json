@@ -1,0 +1,25 @@
+{
+  "name": "Fatto inutile",
+  "description": "Un fatto curioso e inutile, cambia ogni ora",
+  "icon": "info",
+  "shape": "text",
+  "source": {
+    "type": "http",
+    "url": "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en"
+  },
+  "every": 3600,
+  "show": {
+    "label": "LO SAPEVI?",
+    "text": "{{text}}"
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "{{source_url}}"
+  },
+  "size": {
+    "w": 4,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

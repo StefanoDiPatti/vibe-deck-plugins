@@ -1,0 +1,31 @@
+{
+  "name": "Promozioni Epic Games",
+  "description": "I giochi in promozione (anche gratis) sull'Epic Games Store",
+  "icon": "gamepad",
+  "shape": "list",
+  "source": {
+    "type": "http",
+    "url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=it&country=IT"
+  },
+  "every": 3600,
+  "show": {
+    "label": "EPIC GAMES",
+    "items": "{{data.Catalog.searchStore.elements}}",
+    "max": 15,
+    "item": {
+      "icon": "gamepad",
+      "title": "{{item.title}}",
+      "sub": "{{item.seller.name}}"
+    }
+  },
+  "tap": {
+    "type": "open_url",
+    "url": "https://store.epicgames.com/it/free-games"
+  },
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 2
+  }
+}

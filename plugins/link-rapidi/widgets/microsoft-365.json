@@ -1,0 +1,65 @@
+{
+  "name": "Microsoft 365",
+  "description": "Outlook, OneDrive, Word, Excel, PowerPoint, Teams",
+  "icon": "window",
+  "shape": "buttons",
+  "show": {
+    "label": "MICROSOFT 365"
+  },
+  "buttons": [
+    {
+      "label": "OUTLOOK",
+      "icon": "mail",
+      "action": {
+        "type": "open_url",
+        "url": "https://outlook.live.com/"
+      }
+    },
+    {
+      "label": "ONEDRIVE",
+      "icon": "cloud",
+      "action": {
+        "type": "open_url",
+        "url": "https://onedrive.live.com/"
+      }
+    },
+    {
+      "label": "WORD",
+      "icon": "save",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.office.com/launch/word"
+      }
+    },
+    {
+      "label": "EXCEL",
+      "icon": "layout",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.office.com/launch/excel"
+      }
+    },
+    {
+      "label": "POWERPOINT",
+      "icon": "film",
+      "action": {
+        "type": "open_url",
+        "url": "https://www.office.com/launch/powerpoint"
+      }
+    },
+    {
+      "label": "TEAMS",
+      "icon": "headset",
+      "action": {
+        "type": "open_url",
+        "url": "https://teams.microsoft.com/"
+      }
+    }
+  ],
+  "size": {
+    "w": 3,
+    "h": 2,
+    "minW": 2,
+    "minH": 1
+  }
+}

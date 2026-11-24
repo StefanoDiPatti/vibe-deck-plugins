@@ -1,0 +1,23 @@
+{
+  "id": "meteo-extra",
+  "name": "Weather extra",
+  "version": "1.0.0",
+  "author": "StefanoDiPatti",
+  "description": "Air quality, PM2.5 and PM10, UV index, sunrise and sunset, sea waves and rain in the next hours (Open-Meteo, no key; Rome by default)",
+  "type": "plugin",
+  "platforms": [
+    "windows",
+    "linux"
+  ],
+  "engine": ">=2.2.0",
+  "tags": [
+    "weather"
+  ],
+  "permissions": {
+    "http": [
+      "air-quality-api.open-meteo.com",
+      "api.open-meteo.com",
+      "marine-api.open-meteo.com"
+    ]
+  }
+}
